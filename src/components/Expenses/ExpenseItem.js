@@ -1,7 +1,8 @@
 import React from "react";
-import "../components/expenseItem.css";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
+import "../Expenses/expenseItem.css"
+
 
 //access the data needeed from App.js with the help of props
 //obtain th data in <ExpenseDate> with help of props

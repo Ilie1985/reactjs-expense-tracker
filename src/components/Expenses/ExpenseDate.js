@@ -5,7 +5,9 @@
 //TO OUTPUT THE YEAR use the getFullYear built in method
 
 import React from "react";
-import "../components/expenseDate.css";
+import "../Expenses/expenseDate.css"
+
+
 
 const ExpenseDate = (props) => {
   const month = props.date.toLocaleString("en-US", { month: "long" });

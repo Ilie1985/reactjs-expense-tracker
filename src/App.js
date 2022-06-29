@@ -1,4 +1,4 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 //define some dummy data
 //obtain the data we need in the ExpenseItem component with the help of attributes -> title,amount,date
 
