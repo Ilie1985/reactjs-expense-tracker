@@ -1,16 +1,22 @@
 import React from "react";
 import "../components/expenseItem.css";
-const ExpenseItem = () => {
-  const expenseDate = new Date(2022,5,27);
-  const expenseTitle = "Car Insurance";
-  const expensePrice = 294.67;
+
+
+
+//access the data needeed from App.js with the help of props
+
+
+
+const ExpenseItem = (props) => {
+ 
+
   return (
     <div className={"expense-item"}>
-      <div>{expenseDate.toISOString()}</div>
+      <div>{props.date.toISOString()}</div>
 
       <div className={"expense-item_description"}>
-        <h2>{expenseTitle}</h2>
-        <div className={"expense-item_price"}>${expensePrice}</div>
+        <h2>{props.title}</h2>
+        <div className={"expense-item_price"}>${props.amount}</div>
       </div>
     </div>
   );
