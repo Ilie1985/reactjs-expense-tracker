@@ -1,8 +1,10 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpenses/NewExpense";
+import "./index.css";
 //define some dummy data
 //obtain the data we need in the ExpenseItem component with the help of attributes -> title,amount,date
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -26,10 +28,10 @@ function App() {
   ];
   return (
     <div>
-      <h2>Lets get started</h2>
-     <Expenses items={expenses}/>
+      <NewExpense />
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
