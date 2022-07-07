@@ -4,8 +4,8 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import "../Expenses/expenseItem.css";
 
-//access the data needeed from App.js with the help of props
-//obtain th data in <ExpenseDate> with help of props
+//access the data needeed from App.js and Expenses.js with the help of props
+
 
 const ExpenseItem = (props) => {
   const [changeTitle, setChangeTitle] = useState(props.title);
