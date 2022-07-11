@@ -1,12 +1,7 @@
 import React from "react";
 import "./expensesFilter.css";
 
-
-
-
 const ExpensesFilter = (props) => {
-
- 
   const yearHandler = (e) => {
     props.onYearChange(e.target.value);
   };
