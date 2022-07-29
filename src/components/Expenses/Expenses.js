@@ -1,5 +1,5 @@
 import React from "react";
-
+import ExpensesChart from "./ExpensesChart";
 import "./expenses.css";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
@@ -17,8 +17,6 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === expenseFilteredYear;
   });
 
-  
-
   return (
     <div>
       <Card className={"expenses"}>
@@ -26,10 +24,9 @@ const Expenses = (props) => {
           selectedYear={expenseFilteredYear}
           onYearChange={changedYear}
         />
-        <ExpensesList items ={filteredExpenses}/>
+        <ExpensesChart expenses={filteredExpenses} />
+        <ExpensesList items={filteredExpenses} />
       </Card>
-
-    
     </div>
   );
 };
